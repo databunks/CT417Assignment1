@@ -1,4 +1,4 @@
-package org.example;
+package org.CT417Assignment1;
 
 public class Main {
     public static void main(String[] args) {
