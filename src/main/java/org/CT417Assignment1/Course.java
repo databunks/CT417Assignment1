@@ -24,6 +24,8 @@ public class Course
         {
             students.get(i).AddCourse(this);
         }
+
+
     }
 
     public String GetName()

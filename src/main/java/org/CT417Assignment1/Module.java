@@ -22,6 +22,7 @@ public class Module
         {
             students.get(i).AddModule(this);
         }
+
     }
 
     public String GetName()
