@@ -44,6 +44,35 @@ public class Module
         return this.lecturer;
     }
 
+    public void SetName(String name)
+    {
+        this.name = name;
+    }
+
+    public void SetId(String name)
+    {
+        this.name = name;
+    }
+
+    public void SetStudents(ArrayList<Student> students)
+    {
+        this.students = students;
+    }
+
+    public void SetCourses(ArrayList<Course> courses)
+    {
+        this.courses = courses;
+    }
+
+    public void SetLecturer(Lecturer lecturer)
+    {
+        this.lecturer = lecturer;
+    }
+
+
+
+
+
 
 
 

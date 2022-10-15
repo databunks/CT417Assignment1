@@ -46,4 +46,29 @@ public class Course
         return endDate;
     }
 
+    public void SetName(String name)
+    {
+        this.name = name;
+    }
+
+    public void SetModules(ArrayList<Module> modules)
+    {
+        this.modules = modules;
+    }
+
+    public void SetStudents(ArrayList<Student> students)
+    {
+        this.students = students;
+    }
+
+    public void SetStartDate(DateTime startDate)
+    {
+        this.startDate = startDate;
+    }
+
+    public void SetEndDate(DateTime endDate)
+    {
+        this.endDate = endDate;
+    }
+
 }

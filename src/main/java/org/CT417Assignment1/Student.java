@@ -65,4 +65,39 @@ public class Student
         return this.modules;
     }
 
+    public void SetName(String name)
+    {
+        this.name = name;
+    }
+
+    public void SetAge(int age)
+    {
+        this.age = age;
+    }
+
+    public void SetUsername(String username)
+    {
+        this.username = username;
+    }
+
+    public void SetDateOfBirth(DateTime dob)
+    {
+        this.dob = dob;
+    }
+
+    public void SetId(long id)
+    {
+        this.id = id;
+    }
+
+    public void SetCourses(ArrayList<Course> courses)
+    {
+        this.courses = courses;
+    }
+
+    public void SetModules(ArrayList<Module> modules)
+    {
+        this.modules = modules;
+    }
+
 }
