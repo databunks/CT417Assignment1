@@ -20,11 +20,22 @@ public class Course
         this.startDate = startDate;
         this.endDate = endDate;
 
-        for (int i = 0; i < students.size(); i++)
+        if (this.modules == null)
         {
-            students.get(i).AddCourse(this);
+            this.modules = new ArrayList<Module>();
         }
 
+        if (this.students == null)
+        {
+            this.students = new ArrayList<Student>();
+        }
+        else
+        {
+            for (int i = 0; i < students.size(); i++)
+            {
+                students.get(i).AddCourse(this);
+            }
+        }
 
     }
 

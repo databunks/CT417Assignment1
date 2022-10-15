@@ -18,10 +18,24 @@ public class Module
         this.courses = courses;
         this.lecturer = lecturer;
 
-        for (int i = 0; i < students.size(); i++)
+        if (this.courses == null)
         {
-            students.get(i).AddModule(this);
+            this.courses = new ArrayList<Course>();
         }
+
+        if (this.students == null)
+        {
+            this.students = new ArrayList<Student>();
+        }
+        else
+        {
+            for (int i = 0; i < students.size(); i++)
+            {
+                students.get(i).AddModule(this);
+            }
+        }
+
+
 
     }
 
