@@ -17,6 +17,11 @@ public class Module
         this.students = students;
         this.courses = courses;
         this.lecturer = lecturer;
+
+        for (int i = 0; i < students.size(); i++)
+        {
+            students.get(i).AddModule(this);
+        }
     }
 
     public String GetName()

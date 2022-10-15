@@ -100,4 +100,14 @@ public class Student
         this.modules = modules;
     }
 
+    public void AddModule(Module module)
+    {
+        this.modules.add(module);
+    }
+
+    public void AddCourse(Course course)
+    {
+        this.courses.add(course);
+    }
+
 }
