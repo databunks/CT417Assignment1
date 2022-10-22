@@ -29,6 +29,11 @@ public class Student
             this.modules = new ArrayList<Module>();
         }
 
+        if (this.courses == null)
+        {
+            this.courses = new ArrayList<Course>();
+        }
+
         String nameWithoutSpaces = this.name.replaceAll("\\s+","");
         this.username = nameWithoutSpaces + this.age;
     }
