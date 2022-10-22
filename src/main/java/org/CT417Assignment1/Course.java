@@ -91,4 +91,29 @@ public class Course
         this.endDate = endDate;
     }
 
+    @Override
+    public String toString()
+    {
+        String format = "";
+
+        format += GetName() + "\n";
+        format +=  GetStartDate() + "\n";
+        format += GetEndDate() + "\n";
+
+        format += "Assigned Modules: \n\n";
+
+        for (Module module : GetModules())
+        {
+            format += "Name: " + module.GetName() + "\n";
+        }
+
+        format += "\nAssigned Students: \n\n";
+
+        for (Student student : GetStudents())
+        {
+            format += "Username: " + student.GetUsername() + "\n";
+        }
+
+        return format;
+    }
 }

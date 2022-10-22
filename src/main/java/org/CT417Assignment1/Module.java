@@ -91,11 +91,29 @@ public class Module
         this.lecturer = lecturer;
     }
 
+    @Override
+    public String toString()
+    {
+        String format = "";
 
+        format += "Module Name: " + GetName() + "\n";
+        format += "Module Id: " + GetId() + "\n";
+        format += "Assigned Lecturer: " + GetLecturer();
 
+        format += "Assigned Courses: \n\n";
 
+        for (Course course : GetCourses())
+        {
+            format += "Name: " + course.GetName() + "\n";
+        }
 
+        format += "\nAssigned Students: \n\n";
 
+        for (Student student : GetStudents())
+        {
+            format += "Username: " + student.GetUsername() + "\n";
+        }
 
-
+        return format;
+    }
 }

@@ -116,4 +116,31 @@ public class Student
         this.courses.add(course);
     }
 
+    @Override
+    public String toString()
+    {
+        String format = "";
+
+        format += "Student Name: " + GetName()  + "\n";
+        format += "Student Age: " + GetAge()  + "\n";
+        format += "Student DOB: " + GetDateOfBirth() + "\n";
+        format += "Student Id: " + GetId() + "\n";
+        format += "Student Username: " + GetUsername() + "\n";
+
+        format += "Assigned Courses: \n\n";
+
+        for (Course course : GetCourses())
+        {
+            format += "Name: " + course.GetName() + "\n";
+        }
+
+        format += "Assigned Modules: \n\n";
+
+        for (Module module : GetModules())
+        {
+            format += "Name: " + module.GetName() + "\n";
+        }
+
+        return format;
+    }
 }

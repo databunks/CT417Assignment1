@@ -88,6 +88,24 @@ public class Lecturer
         this.modules = modules;
     }
 
+    @Override
+    public String toString()
+    {
+        String format = "";
 
+        format += "Lecturer Name: " + GetName() + "\n";
+        format += "Lecturer Age" +  GetAge() + "\n";
+        format += "Lecturer Id: " + GetId() + "\n";
+        format += "Lecturer Date Of Birth: " + GetDateOfBirth() + "\n";
+        format += "Lecturer Username: " + GetUsername() + "\n";
 
+        format += "Assigned Modules: \n\n";
+
+        for (Module module : GetModules())
+        {
+            format += "Name: " + module.GetName() + "\n";
+        }
+
+        return format;
+    }
 }
