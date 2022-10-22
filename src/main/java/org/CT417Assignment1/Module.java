@@ -23,6 +23,12 @@ public class Module
             this.courses = new ArrayList<Course>();
         }
 
+        if (this.lecturer != null)
+        {
+            this.lecturer.AddModule(this);
+        }
+
+
         if (this.students == null)
         {
             this.students = new ArrayList<Student>();
@@ -89,6 +95,11 @@ public class Module
     public void SetLecturer(Lecturer lecturer)
     {
         this.lecturer = lecturer;
+    }
+
+    public void AddCourse(Course course)
+    {
+        this.courses.add(course);
     }
 
     @Override

@@ -24,6 +24,16 @@ public class Course
         {
             this.modules = new ArrayList<Module>();
         }
+        else
+        {
+            for (int i = 0; i < modules.size(); i++)
+            {
+                Module module = this.modules.get(i);
+                module.AddCourse(this);
+                modules.set(i,module);
+            }
+        }
+
 
         if (this.students == null)
         {

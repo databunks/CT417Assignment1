@@ -24,6 +24,13 @@ public class Lecturer
         this.modules = modules;
         String nameWithoutSpaces = this.name.replaceAll("\\s+","");
         this.username = nameWithoutSpaces + this.age;
+
+        if (this.modules == null)
+        {
+            this.modules = new ArrayList<Module>();
+        }
+
+
     }
 
     public String GetName()
@@ -87,6 +94,13 @@ public class Lecturer
     {
         this.modules = modules;
     }
+
+    public void AddModule(Module module)
+    {
+        this.modules.add(module);
+    }
+
+
 
     @Override
     public String toString()
