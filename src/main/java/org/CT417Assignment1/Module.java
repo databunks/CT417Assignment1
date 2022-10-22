@@ -98,7 +98,7 @@ public class Module
 
         format += "Module Name: " + GetName() + "\n";
         format += "Module Id: " + GetId() + "\n";
-        format += "Assigned Lecturer: " + GetLecturer();
+        format += "Assigned Lecturer: " + GetLecturer() + "\n";
 
         format += "Assigned Courses: \n\n";
 

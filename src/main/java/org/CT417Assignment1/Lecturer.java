@@ -94,7 +94,7 @@ public class Lecturer
         String format = "";
 
         format += "Lecturer Name: " + GetName() + "\n";
-        format += "Lecturer Age" +  GetAge() + "\n";
+        format += "Lecturer Age: " +  GetAge() + "\n";
         format += "Lecturer Id: " + GetId() + "\n";
         format += "Lecturer Date Of Birth: " + GetDateOfBirth() + "\n";
         format += "Lecturer Username: " + GetUsername() + "\n";

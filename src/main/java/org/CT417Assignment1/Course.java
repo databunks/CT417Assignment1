@@ -96,11 +96,11 @@ public class Course
     {
         String format = "";
 
-        format += GetName() + "\n";
-        format +=  GetStartDate() + "\n";
-        format += GetEndDate() + "\n";
+        format += "Course Name: " + GetName() + "\n";
+        format +=  "Course Start Date: " + GetStartDate() + "\n";
+        format += "Course End Date: " + GetEndDate() + "\n";
 
-        format += "Assigned Modules: \n\n";
+        format += "\nAssigned Modules: \n\n";
 
         if (GetModules() != null)
         {
