@@ -33,7 +33,9 @@ public class Course
         {
             for (int i = 0; i < students.size(); i++)
             {
-                students.get(i).AddCourse(this);
+                Student student = students.get(i);
+                student.AddCourse(this);
+                students.set(i,student);
             }
         }
 

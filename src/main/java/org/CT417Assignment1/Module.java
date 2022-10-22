@@ -31,7 +31,9 @@ public class Module
         {
             for (int i = 0; i < students.size(); i++)
             {
-                students.get(i).AddModule(this);
+                Student student = students.get(i);
+                student.AddModule(this);
+                students.set(i,student);
             }
         }
 
