@@ -102,17 +102,24 @@ public class Module
 
         format += "Assigned Courses: \n\n";
 
-        for (Course course : GetCourses())
+        if (GetCourses() != null)
         {
-            format += "Name: " + course.GetName() + "\n";
+            for (Course course : GetCourses())
+            {
+                format += "Name: " + course.GetName() + "\n";
+            }
         }
 
         format += "\nAssigned Students: \n\n";
 
-        for (Student student : GetStudents())
+        if (GetStudents() != null)
         {
-            format += "Username: " + student.GetUsername() + "\n";
+            for (Student student : GetStudents())
+            {
+                format += "Username: " + student.GetUsername() + "\n";
+            }
         }
+
 
         return format;
     }

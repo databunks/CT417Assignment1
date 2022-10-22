@@ -101,10 +101,14 @@ public class Lecturer
 
         format += "Assigned Modules: \n\n";
 
-        for (Module module : GetModules())
+        if (GetModules() != null)
         {
-            format += "Name: " + module.GetName() + "\n";
+            for (Module module : GetModules())
+            {
+                format += "Name: " + module.GetName() + "\n";
+            }
         }
+
 
         return format;
     }
