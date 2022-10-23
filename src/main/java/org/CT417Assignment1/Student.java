@@ -49,6 +49,8 @@ public class Student
         this.username = nameWithoutSpaces + this.age;
     }
 
+    //getters
+
     /**
      * @return the name of the student
      */
@@ -70,7 +72,8 @@ public class Student
      */
     public String GetUsername()
     {
-        return this.username;
+        String nameWithoutSpaces = this.name.replaceAll("\\s+","");
+        return nameWithoutSpaces + this.age;
     }
 
     /**

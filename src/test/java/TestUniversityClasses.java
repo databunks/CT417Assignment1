@@ -71,7 +71,7 @@ public class TestUniversityClasses {
 
         Lecturer testLecturer = new Lecturer(lecturerName, lecturerAge, lecturerDob, testModules);
 
-        // Verifying the age of the student object is valid
+        // Verifying the age of the Lecturer object is valid
         Years expectedAge = Years.yearsBetween(lecturerDob, DateTime.now());
         Assertions.assertEquals(expectedAge.getYears(), testLecturer.GetAge());
 
@@ -96,7 +96,7 @@ public class TestUniversityClasses {
      */
     @Test
     void TestModule() {
-        String moduleName = "Software Engineering";
+        String moduleName = "Software Engineering III";
         String moduleId = "CT-435";
 
         Student testStudent = new Student("wa", 32, null, null, null);

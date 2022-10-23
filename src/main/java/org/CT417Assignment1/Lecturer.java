@@ -69,7 +69,8 @@ public class Lecturer
      */
     public String GetUsername()
     {
-        return this.username;
+        String nameWithoutSpaces = this.name.replaceAll("\\s+","");
+        return nameWithoutSpaces + this.age;
     }
 
     /**
