@@ -11,6 +11,9 @@ import java.util.ArrayList;
 
 public class TestUniversityClasses {
 
+    /**
+     * Test for the student class
+     */
     @Test
     void TestStudent()
     {
@@ -51,6 +54,9 @@ public class TestUniversityClasses {
 
     }
 
+    /**
+     * Test for the Lecturer class
+     */
     @Test
     void TestLecturer()
     {
@@ -85,6 +91,9 @@ public class TestUniversityClasses {
         Assertions.assertEquals(testModules, testLecturer.GetModules());
     }
 
+    /**
+     * Test for the module class
+     */
     @Test
     void TestModule() {
         String moduleName = "Software Engineering";
@@ -110,6 +119,9 @@ public class TestUniversityClasses {
 
     }
 
+    /**
+     * Test for the course class
+     */
     @Test
     void TestCourse()
     {
